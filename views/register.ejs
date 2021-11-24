@@ -1,0 +1,16 @@
+<%- include('header'); -%>
+<div class="content">
+<h1 id="welcome">Register page</h1>
+<form action="/api/register" method="post">
+    <h1>Name: <input type="text" id="name" name="name"></h1>
+    <h1>Phone: <input type="text" id="phone" name="phone"></h1>
+    <h1>Email: <input type="text" id="email" name="email"></h1>
+    <h1>Address: <input type="text" id="address" name="address"></h1>
+    <h1>City: <input type="text" id="city" name="city"></h1>
+    <h1>Zip code: <input type="text" id="zip" name="zip"></h1>
+    <h1>Username: <input type="text" id="username" name="username"></h1>
+    <h1>Password: <input type="password" id="password" name="password"></h1>
+    <input type="submit" id="register" name="register">
+</form>
+</div>
+<%- include('footer'); -%>
