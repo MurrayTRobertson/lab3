@@ -16,39 +16,37 @@
                 </tr>
             </thead>
             <tbody>
-                <% products.forEach(product => { %>
-                    <tr>
-                        <th scope="row">
-                            <%= product.name %>
-                        </th>
-                        <td>
-                            <a href="/api/article/<%= product.reference %>">
-                                <%= product.reference %>
-                            </a>
-                        </td>
-                        <td>
-                            <%= product.category %>
-                        </td>
-                        <td>
-                            <%= product.name %>
-                        </td>
-                        <td>
-                            <%= product.supplier %>
-                        </td>
-                        <td>
-                            <%= product.price %>AED
-                        </td>
-                        <td>
-                            <%= product.vat %>
-                        </td>
-                        <td>
-                            <%= product.stock %>
-                        </td>
-                        <td>
-                            <%= product.critical_stock %>
-                        </td>
-                    </tr>
-                    <% }) %>
+                <tr>
+                    <th scope="row">
+                        <%= product.name %>
+                    </th>
+                    <td>
+                        <a href="/api/article/<%= product.reference %>">
+                            <%= product.reference %>
+                        </a>
+                    </td>
+                    <td>
+                        <%= product.category %>
+                    </td>
+                    <td>
+                        <%= product.name %>
+                    </td>
+                    <td>
+                        <%= product.supplier %>
+                    </td>
+                    <td>
+                        <%= product.price %>AED
+                    </td>
+                    <td>
+                        <%= product.vat %>
+                    </td>
+                    <td>
+                        <%= product.stock %>
+                    </td>
+                    <td>
+                        <%= product.critical_stock %>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>

@@ -9,8 +9,7 @@ const getProductByID = (request, response) => {
     const catalogServices = require('../services/productServices');
     let reference = request.params.id;
     catalogServices.searchIDService(reference, function(err, rows) {
-        response.json(rows);
-        response.end();
+        response.render('article', { product: rows });
     });
 };
 
